@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rahhhhh</title>
+
+        <style>
+            img {
+                width: 600px;
+                height: auto;
+            }
+
+            h1 {
+                color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>waiting for my bubble tea</h1>
+        <p>i was so lost</p>
+
+        <img src="https://www.indy100.com/media-library/my-new-character-is-a-meme-people-are-obsessed-with.png?id=54836665&width=800&quality=85">
+
+        <blockquote>"some say im bad at coding but im just a chill guy whos always down to have fun" - My new character</blockquote>
+        <button onclick="changeQuote()">Change Quote</button>
+
+        <script>
+            var index = 0;
+
+            function changeQuote() {
+                var quotes = [
+                    `"ka!"`,
+                    `"cha`,
+                    `"ow"`,
+                ];
+
+                var blockquote = document.querySelector("blockquote");
+                blockquote.innerHTML = quotes[index];
+
+                index++;
+                if (index >= 3) {
+                    index = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
